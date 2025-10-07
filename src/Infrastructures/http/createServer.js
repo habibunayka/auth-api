@@ -49,7 +49,7 @@ const createServer = async (container) => {
                 return newResponse;
             }
 
-            // mempertahankan penanganan client error oleh hapi secara native, seperti 404, etc.
+            // mempertahankan penanganan client error oleh hapi secara native, seperti 404, etc
             if (!translatedError.isServer) {
                 return h.continue;
             }
